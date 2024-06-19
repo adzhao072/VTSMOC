@@ -13,7 +13,7 @@ Please cite this package as follows:
   volume={x},
   number={x},
   pages={xxx},
-  keywords={Analog circuits;Integrated circuit modeling;Bayes methods;Gaussian processes;Optimization methods;Mathematical models;Training;Analog circuit synthesis;Bayesian optimization (BO);derivative free optimization (DFO);high-dimensional optimization;subspace technique}
+  keywords={Voronoi tree search; Constrained multi-objective Bayesian optimization; Expected Pareto front improvement; High-dimensional optimization}
   }
 ```
 
