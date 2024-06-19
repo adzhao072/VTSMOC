@@ -58,11 +58,8 @@ bound = np.array([np.zeros(dims),np.ones(dims)])
 
 # Objective function
 def DTLZ2(x):
-
     xs = bound[0] + (bound[1] - bound[0]) * np.atleast_2d(x)  #normalize to [0,1]^d
-    
     y = dtlz2._evaluate_F(xs)
-    
     return y
 
 # Lower bound of input space
@@ -115,7 +112,7 @@ optimizer = VTSMOC(
                    use_cuda = False,     #train GP on GPU
 
                    set_greedy = False    # greedy setting
-                   
+
                    )
 
 optimizer.search()
