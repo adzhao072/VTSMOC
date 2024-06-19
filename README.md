@@ -36,7 +36,9 @@ Please cite this package as follows:
 ## Examples
 
 import numpy as np
+
 from VTSMOC import VTSMOC
+
 from benchmarks.DTLZ import DTLZ2
 
 # Dimension of input space
@@ -45,6 +47,7 @@ dims = 50
 n_obj = 2
 # Number of constraints
 n_con = 0
+
 dtlz2 = DTLZ2(n_var=dims,n_obj=n_obj)
 
 # Referece point for HV calculation
@@ -55,8 +58,11 @@ bound = np.array([np.zeros(dims),np.ones(dims)])
 
 # Objective function
 def DTLZ2(x):
+
     xs = bound[0] + (bound[1] - bound[0]) * np.atleast_2d(x)  #normalize to [0,1]^d
+    
     y = dtlz2._evaluate_F(xs)
+    
     return y
 
 # Lower bound of input space
@@ -77,23 +83,39 @@ expansion_factor = 0.0
 
 # Search with VTSMOC
 optimizer = VTSMOC(
+
                    lb,              # the lower bound of each problem dimensions
+
                    ub,              # the upper bound of each problem dimensions
+
                    dims,          # the problem dimensions
+
                    DTLZ2,               # function object to be optimized
+
                    n_obj,
+
                    n_con,
-                   #n_eqcons,
+
                    ninits,      # the number of random samples used in initializations 
+
                    iteration,    # maximal iterations
+
                    batch_size,
+
                    ref_max,
+
                    leaf_size = 200,  # tree leaf size
+
                    kernel_type = 'Matern',   # kernel for GP model
+
                    acq_func = acq_func,
+
                    expansion_factor = expansion_factor,
+
                    use_cuda = False,     #train GP on GPU
+
                    set_greedy = False    # greedy setting
+                   
                    )
 
 optimizer.search()
