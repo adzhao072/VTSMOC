@@ -7,14 +7,14 @@ Please cite this package as follows:
 ```
 @ARTICLE{VTSMOC-article,
   author={Zhao, Aidong and Lyu, Ruiyu and Zhao, Xuyang and Bi, Zhaori and Yang, Fan and Yan, Changhao and Zhou, Dian and Su, Yangfeng and Zeng, Xuan},
-  journal={Submitted to the IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems}, 
-  title={VTSMOC: An Efficient Voronoi Tree Search Boosted Multi-objective Bayesian Optimization with Constraints for High-dimensional Analog Circuit Synthesis}, 
-  year={xx},
-  volume={x},
-  number={x},
-  pages={xxx},
-  keywords={Voronoi tree search; Constrained multi-objective Bayesian optimization; Expected Pareto front improvement; High-dimensional optimization}
-  }
+  journal={IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems}, 
+  title={VTSMOC: An Efficient Voronoi Tree Search Boosted Multiobjective Bayesian Optimization With Constraints for High-Dimensional Analog Circuit Synthesis}, 
+  year={2025},
+  volume={44},
+  number={3},
+  pages={818-831},
+  keywords={Optimization;Bayes methods;Computational modeling;Analog circuits;Integrated circuit modeling;Closed box;Mathematical models;Constrained multiobjective Bayesian optimization (MOBO);expected Pareto front improvement (EPFI);high-dimensional optimization;Voronoi tree search},
+  doi={10.1109/TCAD.2024.3455932}}
 ```
 
 
