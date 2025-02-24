@@ -13,7 +13,6 @@ Please cite this package as follows:
   volume={44},
   number={3},
   pages={818-831},
-  keywords={Optimization;Bayes methods;Computational modeling;Analog circuits;Integrated circuit modeling;Closed box;Mathematical models;Constrained multiobjective Bayesian optimization (MOBO);expected Pareto front improvement (EPFI);high-dimensional optimization;Voronoi tree search},
   doi={10.1109/TCAD.2024.3455932}}
 ```
 
